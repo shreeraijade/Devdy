@@ -36,6 +36,13 @@ This is an inventory management system for an e-commerce store implemented using
     npm run dev
     ```
 
+
+4. Open new Terminal:
+    ```sh
+    cd Devdy
+    npm run dev
+    ```    
+
 ## Usage
 
 Make sure the server is running. Use an API client like Postman or `curl` to interact with the endpoints.
