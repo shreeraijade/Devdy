@@ -110,7 +110,7 @@ let products = [
 ];
 ```
 
-###Coupons
+### Coupons
 
 Stored in an array:
 ```js
@@ -124,7 +124,8 @@ let coupons = [
 ```
 
 
-###Cart
+### Cart
+
 Stored as an object where each key is a customer ID and the value is an array of items:
 ```js
 Copy code
@@ -136,7 +137,8 @@ let cart = {
 };
 ```
 
-Add Item to Inventory
+### Add Item to Inventory
+
 curl -X POST http://localhost:5000/api/v1/products/addItem -H "Content-Type: application/json" -d '{
   "productId": "6",
   "name": "Product 6",
@@ -145,14 +147,16 @@ curl -X POST http://localhost:5000/api/v1/products/addItem -H "Content-Type: app
 }'
 
 
-Remove Item from Inventory
+### Remove Item from Inventory
+
 curl -X DELETE http://localhost:5000/api/v1/products/removeItem -H "Content-Type: application/json" -d '{
   "productId": "1",
   "quantity": 10
 }'
 
 
-Add Item to Cart
+### Add Item to Cart
+
 curl -X POST http://localhost:5000/api/v1/cart/addToCart -H "Content-Type: application/json" -d '{
   "customerId": "123",
   "productId": "1",
