@@ -139,7 +139,7 @@ let cart = {
 
 ### Add Item to Inventory
 ```sh
-curl -X POST http://localhost:5000/api/v1/products/addItem -H "Content-Type: application/json" -d '{
+curl -X POST http://localhost:9000/api/v1/products/addItem -H "Content-Type: application/json" -d '{
   "productId": "6",
   "name": "Product 6",
   "price": 60,
@@ -150,7 +150,7 @@ curl -X POST http://localhost:5000/api/v1/products/addItem -H "Content-Type: app
 
 ### Remove Item from Inventory
 ```sh
-curl -X DELETE http://localhost:5000/api/v1/products/removeItem -H "Content-Type: application/json" -d '{
+curl -X DELETE http://localhost:9000/api/v1/products/removeItem -H "Content-Type: application/json" -d '{
   "productId": "1",
   "quantity": 10
 }'
@@ -159,7 +159,7 @@ curl -X DELETE http://localhost:5000/api/v1/products/removeItem -H "Content-Type
 
 ### Add Item to Cart
 ```sh
-curl -X POST http://localhost:5000/api/v1/cart/addToCart -H "Content-Type: application/json" -d '{
+curl -X POST http://localhost:9000/api/v1/cart/addToCart -H "Content-Type: application/json" -d '{
   "customerId": "123",
   "productId": "1",
   "quantity": 2
@@ -169,7 +169,7 @@ curl -X POST http://localhost:5000/api/v1/cart/addToCart -H "Content-Type: appli
 
 ### Apply Discount Coupon
 ```sh
-curl -X POST http://localhost:5000/api/v1/coupon/applyDiscount -H "Content-Type: application/json" -d '{
+curl -X POST http://localhost:9000/api/v1/coupon/applyDiscount -H "Content-Type: application/json" -d '{
   "cartValue": 500,
   "discountId": "3"
 }'
