@@ -23,7 +23,7 @@ This is an inventory management system for an e-commerce store implemented using
 1. Clone the repository:
     ```sh
     git clone <repository_url>
-    cd inventory-management-system
+    cd Devdy
     ```
 
 2. Install dependencies:
@@ -33,7 +33,7 @@ This is an inventory management system for an e-commerce store implemented using
 
 3. Start the server:
     ```sh
-    npm start
+    npm run dev
     ```
 
 ## Usage
