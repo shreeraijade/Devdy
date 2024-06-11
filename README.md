@@ -40,7 +40,7 @@ This is an inventory management system for an e-commerce store implemented using
 4. Open new Terminal:
     ```sh
     cd Devdy
-    npm run dev
+    node driver.js
     ```    
 
 ## Usage
