@@ -154,6 +154,7 @@ curl -X DELETE http://localhost:5000/api/v1/products/removeItem -H "Content-Type
   "productId": "1",
   "quantity": 10
 }'
+```
 
 
 ### Add Item to Cart
